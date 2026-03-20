@@ -26,7 +26,6 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Source Sans 3', sans-serif; background: var(--bg); color: var(--text); height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
 
-
   /* LAYOUT */
   .app-body { flex: 1; display: flex; overflow: hidden; }
 
@@ -414,7 +413,10 @@ function mergAndRender() {
   const allCoords = mergedStations.filter(s => s.lat && s.lon).map(s => [s.lat, s.lon]);
   if (allCoords.length > 0) {
     const bounds = L.latLngBounds(allCoords);
-    if (bounds.isValid()) map.fitBounds(bounds, { padding: [0, 0] });
+    if (bounds.isValid()) {
+      const zoom = map.getBoundsZoom(bounds, true);
+      map.setView(bounds.getCenter(), zoom);
+    }
   }
 }
 
