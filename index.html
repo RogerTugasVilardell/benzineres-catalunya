@@ -193,19 +193,8 @@
       <div class="fuel-tabs">
         <div class="fuel-row">
           <button class="fuel-tab active" data-fuel="Gasolina95">G-95</button>
-          <button class="fuel-tab" data-fuel="Gasolina95Premium">G-95 Prem.</button>
           <button class="fuel-tab" data-fuel="Gasolina98">G-98</button>
-        </div>
-        <div class="fuel-row">
           <button class="fuel-tab" data-fuel="GasoleoA">Dièsel</button>
-          <button class="fuel-tab" data-fuel="GasoloePremium">Dièsel Prem.</button>
-          <button class="fuel-tab" data-fuel="GasoleoB">Dièsel B</button>
-        </div>
-        <div class="fuel-row">
-          <button class="fuel-tab" data-fuel="GLP">GLP</button>
-          <button class="fuel-tab" data-fuel="GNC">GNC</button>
-          <button class="fuel-tab" data-fuel="GNL">GNL</button>
-          <button class="fuel-tab" data-fuel="Adblue">AdBlue</button>
         </div>
       </div>
     </div>
@@ -254,6 +243,24 @@
     <!-- LLISTA -->
     <div class="station-list-header" id="list-header">Les més barates</div>
     <div class="station-list" id="station-list"></div>
+
+    <!-- ALTRES COMBUSTIBLES -->
+    <div class="panel-section">
+      <div class="panel-label">Altres combustibles</div>
+      <div class="fuel-tabs">
+        <div class="fuel-row">
+          <button class="fuel-tab" data-fuel="Gasolina95Premium">G-95 Prem.</button>
+          <button class="fuel-tab" data-fuel="GasoloePremium">Dièsel Prem.</button>
+          <button class="fuel-tab" data-fuel="GasoleoB">Dièsel B</button>
+        </div>
+        <div class="fuel-row">
+          <button class="fuel-tab" data-fuel="GLP">GLP</button>
+          <button class="fuel-tab" data-fuel="GNC">GNC</button>
+          <button class="fuel-tab" data-fuel="GNL">GNL</button>
+          <button class="fuel-tab" data-fuel="Adblue">AdBlue</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="map"></div>
@@ -280,9 +287,9 @@ const FUEL_LABELS = {
   Gasolina95:        'G-95 E5',
   Gasolina95Premium: 'G-95 Premium',
   Gasolina98:        'G-98 E5',
-  GasoleoA:          'Gasoleo A',
-  GasoloePremium:    'Gasoleo Premium',
-  GasoleoB:          'Gasoleo B',
+  GasoleoA:          'Gasoil A',
+  GasoloePremium:    'Gasoil Premium',
+  GasoleoB:          'Gasoil B',
   GLP:               'GLP',
   GNC:               'GNC',
   GNL:               'GNL',
